@@ -1,0 +1,30 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1422
+
+A script that automatically maps buffers to function keys.
+
+Keys:
+F<n>
+        Switch to window 1 through 12.
+SHIFT-F<n>
+        Switch to window 13 through 24.
+ALT-1 through ALT-0
+        Switch to window 1 through 10.
+CTRL-W, F<n>
+        Swap the buffer in the current window with the one
+        in window n, and activate window n.
+CTRL-W, SHIFT-F<n>
+        Swap the buffer in the current window with the one
+        in buffer n+12, and activate window n+12.
+CTRL-W, ALT-<n>
+        Swap the buffer in the current window with the one
+        in window n, and activate window n.
+CTRL-W, c
+        Close the current buffer. This does ":bdelete",
+        so it will not work when there are unsaved changes.
+        Use ":bd!" in this case if you want to discard them.
+CTRL-W, .
+        Move buffers along to lower numbered windows
+        (useful after closing a buffer)
+CTRL-W, /
+        List all Windows.
+
